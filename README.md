@@ -2,6 +2,7 @@
 1.6(8)
 
 class ExtendedStack(list):
+    
     def sum(self):
         top1 = self.pop()
         top2 = self.pop()
