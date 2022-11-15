@@ -9,4 +9,4 @@ except ZeroDivisionError:
 else:
         print('Всё хорошо.')
 finally:
-        print('Всё.')
+        print('Конец.')
