@@ -10,3 +10,9 @@ else:
         print('Всё хорошо.')
 finally:
         print('Конец.')
+
+       #mod_checker
+def mod_checker(x, mod=0):
+    return lambda z:True if z%x == mod else False
+mod_3 = mod_checker(3)
+print(mod_3(3))
