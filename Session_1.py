@@ -29,7 +29,6 @@ q = task_2("12abd3")
 def task_3(l1, l2):
     print(list(set(l1) - set(l2)), list(set(l2) - set(l1)))
 
-
 task_3(["red", "orange", "green", "blue", "white"], ["black", "yellow", "green", "blue"])
 
 #task 4
@@ -64,6 +63,26 @@ def task_6(n):
         print (v)  
 task_6(2550)
 
+#task 7
+
+def task_7(q):
+    l = []
+    s = {}
+    for c in q:
+        if c in s:
+            s[c] += 1
+        else:
+            s[c] = 1 
+            l.append(c)
+    for c in l:
+        if s[c] == 1:
+            print(c)
+            return c
+    return None
+    
+task_7('aba')
+task_7("aaaccc") #Не пишет None :(
+task_7("aaacccb")
 
 # task 8
 
@@ -83,4 +102,3 @@ def task_8(l):
     return x
     
 task_8([1, 2, 3, 4, 5])
-
